@@ -51,6 +51,9 @@ header{
     header nav .fa-bars{
     display: none;
 }
+header nav .fa-x{
+    display: none;
+}
 /* mobile css */
 @media (max-width: 767px){
     header nav .fa-bars{
@@ -62,7 +65,18 @@ header{
         font-size: large;
         z-index: 999;
     }
+    header nav .fa-x{
+        display: block;
+        padding: 20px 20px 15px 20px;
+        left: 0px;
+        right: auto;
+        position: fixed;
+        font-size: large;
+        z-index: 998;
+        display:none;
+    }
 }
+
 .navbar ul{
     display: flex;
     padding: 20px;
@@ -959,6 +973,9 @@ margin-left: -127px;
     
 }
 .fa-bars.fa-bars-active{
-    background-color: black;
+    display:none;
+}
+.fa-solid.fa-x-active{
+    display:block;
 }
 }
